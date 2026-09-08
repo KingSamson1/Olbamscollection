@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Olbams Collections</title> 
+    <style> 
+        :root { 
+            --bg-color: #000000; 
+            --text-color: #f8fafc; 
+            --accent-color: #e0337a; 
+            --card-bg: #111111; 
+        } 
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color); 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            align-items: center; 
+            justify-content: center; 
+        } 
+        .container { 
+            max-width: 800px; 
+            padding: 40px 20px; 
+            text-align: center; 
+        } 
+        .header-brand { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 15px; 
+            margin-bottom: 10px; 
+        } 
+        .brand-logo { 
+            max-height: 160px; 
+            width: auto; 
+            object-fit: contain; 
+        } 
+        header h1 { 
+            font-size: 3rem; 
+            color: var(--accent-color); 
+            margin: 0; 
+            letter-spacing: 1px; 
+        } 
+        .tagline { 
+            font-size: 1.2rem; 
+            color: #94a3b8; 
+            margin-top: 10px; 
+            margin-bottom: 30px; 
+        } 
+        main { 
+            background-color: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 15px -3px rgba(224, 51, 122, 0.1); 
+            border: 1px solid #222222; 
+            margin-bottom: 30px; 
+        } 
+        main p { 
+            line-height: 1.6; 
+            color: #cbd5e1; 
+            font-size: 1.1rem; 
+        } 
+        .gallery-title { 
+            font-size: 1.8rem; 
+            color: var(--accent-color); 
+            margin: 40px 0 20px 0; 
+        } 
+        .image-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 20px; 
+            width: 100%; 
+        } 
+        .image-card { 
+            background-color: var(--card-bg); 
+            border: 1px solid #222222; 
+            border-radius: 8px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+        } 
+        .image-placeholder { 
+            width: 100%; 
+            height: 250px; 
+            background-color: #222222; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #94a3b8; 
+            font-size: 0.9rem; 
+            object-fit: cover; 
+        } 
+        .image-caption { 
+            padding: 12px; 
+            font-size: 1rem; 
+            color: #cbd5e1; 
+            font-weight: 500; 
+        } 
+        .social-follow {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .social-follow p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 15px;
+        }
+        .social-icon {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            font-size: 1.1rem;
+            transition: color 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            color: var(--accent-color);
+            transform: scale(1.05);
+        }
+        .platform-logo {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        footer { 
+            margin-top: 40px; 
+            font-size: 0.85rem; 
+            color: #64748b;
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <header> 
+            <div class="header-brand"> 
+                <img class="brand-logo" src="logo 1.jpg" alt="Olbams Collections Logo"> 
+                <h1>Olbams Collections</h1> 
+            </div> 
+            <div class="tagline">Where style meets affordability.</div> 
+        </header> 
+        
+        <main> 
+            <h2>Welcome to Our Collection</h2> 
+            <p> Discover curated pieces designed to elevate your everyday look. At <strong>Olbams Collections</strong>, we combine premium styles with accessible pricing so you never have to compromise on looking your best. </p> 
+            <p> Explore our latest arrivals and find the perfect match for your unique fashion statement. </p>
+
+            <ul style="text-align: left; display: inline-block; list-style-type: none; padding: 0; color: #cbd5e1; font-size: 1.1rem; line-height: 2;">
+                <li>🛍️ Retail & Wholesale Available</li>
+                <li>💰 Affordable Prices</li>
+                <li>🚚 Fast & Reliable Delivery</li>
+                <li>📍 Nationwide Shipping</li>   
+            </ul>
+        </main> 
+        
+        <h2 id="gallery" class="gallery-title">Featured samples</h2> 
+        <div class="image-grid"> 
+            <div class="image-card"> 
+                <img class="image-placeholder" src="mum ire 3.jpg" alt="Collection Item 1"> 
+                <div class="image-caption">New Arrival Style</div> 
+            </div> 
+            <div class="image-card"> 
+                <img class="image-placeholder" src="bag 1.jpeg" alt="Collection Item 2"> 
+                <div class="image-caption">Classic Essentials</div> 
+            </div> 
+            <div class="image-card"> 
+                <img class="image-placeholder" src="mum ire 5.jpg" alt="Collection Item 3"> 
+                <div class="image-caption">Trending Now</div> 
+            </div> 
+        </div> 
+
+        <div class="social-follow">
+            <p>For more enquiries Kindly follow us on these platforms:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/olbamstore/" class="social-icon" target="_blank">
+                    <img src="insta2.jpg" alt="Instagram" class="platform-logo">
+                    <span>@olbamstore</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100061948012193" class="social-icon" target="_blank">
+                    <img src="face2.jpg" alt="Facebook" class="platform-logo">
+                    <span>Olbams Collections</span>
+                </a>
+                <a href="https://www.tiktok.com/@olbams_collections" class="social-icon" target="_blank">
+                    <img src="tic2.jpg" alt="TikTok" class="platform-logo">
+                    <span>@olbams_collections</span>
+                </a>
+            </div>
+        </div> 
+
+        <footer> 
+            <p>&copy; 2026 Olbams Collections. All Rights Reserved.</p>
+        </footer> 
+    </div>
+</body> 
+</html>
