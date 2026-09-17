@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .registration-container {
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            max-width: 480px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p.subtitle {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 15px;
+            color: #333;
+            background-color: #fff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #26d420;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        button {
+            background-color: #16c24f;
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="registration-container">
+        <h2>Student Registration</h2>
+        <p class="subtitle">Please fill out the form below to register the student.</p>
+
+        <form id="student-form" action="https://formsubmit.co/popoolaobaoluwa571@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Student Registration">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://kingsamson1.github.io/Monidams-Schools-Website/thankyou.html">
+            <!-- Student Full Name -->
+            <div class="form-group">
+                <label for="student-name">Student Full Name</label>
+                <input type="text" id="student-name" name="student_name" placeholder="Chidi Obi" required>
+            </div>
+
+            <!-- Class Selection -->
+            <div class="form-group">
+                <label for="student-class">Class</label>
+                <select id="student-class" name="student_class" required>
+                    <option value="" disabled selected>-- Choose Class --</option>
+                    <option value="Primary 1">Primary 1</option>
+                    <option value="Primary 2">Primary 2</option>
+                    <option value="Primary 3">Primary 3</option>
+                    <option value="Primary 4">Primary 4</option>
+                    <option value="Primary 5">Primary 5</option>
+                    <option value="Primary 6">Primary 6</option>
+                    <option value="JSS 1">JSS 1</option>
+                    <option value="JSS 2">JSS 2</option>
+                    <option value="JSS 3">JSS 3</option>
+                    <option value="SS 1">SS 1</option>
+                    <option value="SS 2">SS 2</option>
+                    <option value="SS 3">SS 3</option>
+                </select>
+            </div>
+
+            <!-- Parent Email -->
+            <div class="form-group">
+                <label for="parent-email">Parent Email Address</label>
+                <input type="email" id="parent-email" name="parent_email" placeholder="parent@example.com" required>
+            </div>
+
+            <!-- Parent Phone Number -->
+            <div class="form-group">
+                <label for="parent-phone">Parent Phone Number</label>
+                <input type="tel" id="parent-phone" name="parent_phone" placeholder="08031234567" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+</body>
+
+</html>

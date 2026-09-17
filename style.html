@@ -1,0 +1,274 @@
+[8:09 AM, 7/18/2026] king Samson: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monidams Schools - index</title>
+  <style>
+    /* ====== GLOBAL STYLE ====== */
+    :root {
+      --primary: #1a73e8;
+      --secondary: #ff9800;
+      --dark: #0f172a;
+      --light: #f8fafc;
+      --text: #334155;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    }
+    body {
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    i…
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    }
+    body {
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ====== NAVBAR ====== */
+    header {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+      background: linear-gradient(rgba(26,115,232,0.85), rgba(26,115,232,0.85)), 
+                  url('https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?q=80&w=1200') center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.95;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: var(--secondary);
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e68900;
+      transform: translateY(-2px);
+    }
+
+    /* ====== FEATURES ====== */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--dark);
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    /* ====== ABOUT ====== */
+    .about {
+      background: white;
+    }
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+  
+    }
+    .about-content div {
+      flex: 1 1 400px;
+    }
+
+    /* ====== CONTACT ====== */
+    .contact {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      border-radius: 14px;
+      padding: 40px 20px;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: var(--dark);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* ====== MOBILE ====== */
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <div class="logo">Monidams Schools</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Welcome to Monidams Schools</h1>
+    <p>We nurture creativity, discipline and academic excellence to raise the leaders of tomorrow.</p>
+    <a href="#contact" class="btn">Enroll Now</a>
+  </section>
+
+  <!-- FEATURES / PROGRAMS -->
+  <section class="section" id="programs">
+    <h2>Why Parents Choose Us</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📚 Academic Excellence</h3>
+        <p>WAEC, NECO & JAMB focused learning with experienced teachers.</p>
+      </div>
+      <div class="card">
+        <h3>💻 Digital Learning</h3>
+        <p>Smart classrooms, computer lab and coding for all students.</p>
+      </div>
+      <div class="card">
+        <h3>🏅 Character Building</h3>
+        <p>We teach values, leadership and discipline alongside books.</p>
+      </div>
+      <div class="card">
+        <h3>⚽ Sports & Clubs</h3>
+        <p>Debate, music, football and science club for all-round growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <h2>About Monidams Schools</h2>
+    <div class="about-content">
+      <div>
+        <p>Monidams Schools has been providing quality education since the year 1988. 
+        Our mission is to develop confident, well-rounded students who excel academically 
+        and morally. We combine modern teaching methods with strong Nigerian values.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800" alt="Students in class">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact">
+      <h2>Contact Us Today</h2>
+      <p>📍 3, ikare Street, Aguda, surulere, Lagos, Nigeria</p>
+      <p>📞 +234 801 234 5678 | ✉️ info@monidamsschools.ng</p>
+      <a href="tel:+2348012345678" class="btn" style="background:white; color:var(--primary);">Call Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Monidams Schools. All Rights Reserved.
+  </footer>
+
+
+  
+
+</body>
+</html

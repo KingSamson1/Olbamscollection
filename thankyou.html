@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Complete</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .thankyou-container {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      max-width: 450px;
+      width: 100%;
+      text-align: center;
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Success Circle & Checkmark */
+    .checkmark-circle {
+      width: 90px;
+      height: 90px;
+      background-color: #e6f7ed;
+      color: #2ecc71;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 24px auto;
+      font-size: 46px;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #7f8c8d;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* Return Action Button */
+    .btn-return {
+      display: block;
+      background-color: #2ecc71;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-return:hover {
+      background-color: #27ae60;
+    }
+
+    .btn-return:active {
+      transform: scale(0.98);
+    }
+
+    /* Smooth page entry animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thankyou-container">
+    <!-- Clean Styled Visual Checkmark -->
+    <div class="checkmark-circle">✓</div>
+    
+    <h1>Submission Successful!</h1>
+    <p>Thank you for submitting the student registration. The details and parent contact information have been safely delivered to the school administration, and you will be contacted when to come for the facial conference. </p>
+    
+    <!-- Links back directly to your register.html file -->
+    <a href="register.html" class="btn-return">Register Another Student</a>
+  </div>
+  
+
+</body>
+</html>
